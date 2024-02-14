@@ -1,0 +1,11 @@
+.mat-mdc-raised-button.mat-custom-color {
+  color: white;
+  --tw-bg-opacity: 1;
+  background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+  height: 30px;
+  margin: 0px;
+}
+
+.content-spinner{
+  height: 88vh;
+}

@@ -1,0 +1,12 @@
+/* mat-grid-tile {
+  background: lightblue;
+} */
+mat-grid-tile{
+  margin: 12px;
+}
+
+mat-card{
+  width: auto;
+  height: 20vh;
+  background-color: blueviolet;
+}

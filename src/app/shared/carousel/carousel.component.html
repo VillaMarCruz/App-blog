@@ -1,0 +1,15 @@
+<div class="slider">
+  <div>
+    <div (click)="goToPrevious()" class="leftArrow">❰</div>
+    <div (click)="goToNext()" class="rightArrow">❱</div>
+  </div>
+
+  <div class="slide" [ngStyle]="{ 'background-image': getCurrentSlideUrl() }"></div>
+
+  <div class="dotsContainer">
+    @for (slide of images; track $index) {
+    <div class="dot" (click)="goToSlide($index)">
+    </div>
+      }
+    </div>
+  </div>

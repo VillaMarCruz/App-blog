@@ -1,0 +1,17 @@
+@if (!loading()) {
+  <div
+  class="flex bg-slate-100 text-black overflow-y-scroll w-screen h-screen antialiased selection:bg-blue-600 selection:text-white">
+  <div class="flex w-screen">
+    <app-sidebar [user]="user"></app-sidebar>
+    <div class="w-full" >
+      <app-admin-header [user]="user"></app-admin-header>
+      <div class="px-2 mt-2 ">
+        <router-outlet></router-outlet>
+      </div>
+    </div>
+  </div>
+</div>
+
+}@else {
+  <app-spinner></app-spinner>
+}

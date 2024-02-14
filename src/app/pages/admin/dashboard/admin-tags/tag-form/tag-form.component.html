@@ -1,0 +1,19 @@
+<app-title [title]="title"></app-title>
+<form class="grid grid-cols-1 gap-3 mx-2" #f="ngForm" (ngSubmit)="save(f)">
+  <mat-form-field>
+    <mat-label>Nombre</mat-label>
+    <input type="text" matInput placeholder="Nombre" name="name" [ngModel]="category()?.name" required>
+    <mat-error>Debe ingresar un nombre de categoría</mat-error>
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descripción</mat-label>
+    <input type="text" matInput placeholder="Nombre" name="description" [ngModel]="category()?.description">
+    <mat-error>Debe ingresar un nombre de categoría</mat-error>
+  </mat-form-field>
+
+  <button type="submit" class="font-black h-8 rounded-2xl outline outline-indigo-500 hover:bg-indigo-500 hover:text-white">
+    Guardar
+  </button>
+
+</form>
